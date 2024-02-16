@@ -1,0 +1,94 @@
+.suggest-food {
+	margin-top: 25px;
+	display: flex;
+	width: 1519px;
+	height: 122px;
+	margin-bottom: 115px;
+}
+
+.foods-list {
+	flex: 1;
+	width: 1296px;
+	height: 122px;
+	margin: 0 99px;
+}
+
+.food-img {
+	flex: 1;
+	position: absolute;
+	z-index: -1;
+	width: 240px;
+	height: 122px;
+}
+
+.food {
+	transition: 0.3s;
+	overflow: hidden;
+	overflow-wrap: hidden;
+	border-radius: 12px;
+
+	position: relative;
+	align-items: center;
+	color: #fff;
+
+	background-color: rgba(0, 0, 0, 0.45);
+}
+
+.food:hover {
+	transition: 0.3s;
+	box-shadow: 4px 3px rgba(128, 128, 128, 0.45);
+	transform: scale(1.01);
+	color: rgba(255, 255, 255, 0.45);
+}
+
+.food-details {
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.product-card {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+	.suggest-food {
+		margin-top: 1px;
+		display: flex;
+		width: 420px;
+		height: 122px;
+		margin-bottom: 5px;
+	}
+
+	.foods-list {
+		flex: 1;
+		width: 420px;
+		height: 40px;
+		margin: 0 1px;
+	}
+}
+
+@media screen and (max-width: 1080px) and (orientation: landscape) {
+	.suggest-food {
+		margin-top: 25px;
+		display: flex;
+		width: 910px;
+		height: 122px;
+		margin-bottom: 5px;
+	}
+
+	.foods-list {
+		flex: 1;
+		width: 420px;
+		height: 40px;
+		margin: 0 1px;
+	}
+}
+
+.slick-slide > div {
+	margin: 0 3%;
+}
+
+.slick-arrow > button::before {
+	display: none;
+}
